@@ -52,7 +52,7 @@ pipeline {
                   sh '''export PRISMA_API_URL=https://api2.prismacloud.io
                     virtualenv -p python3 .venv
                     . .venv/bin/activate && pip install bridgecrew
-                    . .venv/bin/activate && bridgecrew --directory . --skip-path .venv --bc-api-key $PRISMA_ACCESS_KEY::$PRISMA_SECRET_KEY --use-enforcement-rules --repo-id qaswqaa/code2cloud_cloud_breach
+                    . .venv/bin/activate && bridgecrew --directory . --skip-path .venv --bc-api-key $PRISMA_ACCESS_KEY::$PRISMA_SECRET_KEY --use-enforcement-rules --repo-id esbriand/code2cloud_cloud_breach
                     '''
                }
             }
